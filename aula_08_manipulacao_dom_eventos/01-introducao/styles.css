@@ -1,0 +1,14 @@
+/* CSS */
+body{
+    background-color: rgb(68, 125, 199);
+    color: #fff;
+    font: normal 18pt Arial;
+}
+div#caixaMagica {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
