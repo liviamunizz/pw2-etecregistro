@@ -1,0 +1,12 @@
+/* CSS */
+body {
+    font: normal 18pt Arial;
+}
+input {
+    font: normal 18pt Arial;
+    width: 100px;
+}
+div#resultado {
+    margin-top: 20px;
+    font-weight: 600;
+}
