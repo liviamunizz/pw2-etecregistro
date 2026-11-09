@@ -1,0 +1,10 @@
+# Imagens de exemplo (exercício Bootstrap):
+
+- Desenvolvimento Web:
+https://images.unsplash.com/photo-1518770660439-4636190af475
+
+- Consultoria:
+https://images.unsplash.com/photo-1521737604893-d14cc237f11d
+
+- Soluções Digitais:
+https://images.unsplash.com/photo-1504384308090-c894fdcc538d

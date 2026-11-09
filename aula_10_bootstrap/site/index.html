@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova Solutions - Exemplo Bootstrap</title>
+    <!-- Importação do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <header class="text-center mb-5 position-relative">
+
+        <!-- Botão Switch (Canto superior direito) -->
+        <div class="form-check form-switch position-absolute top-0 end-0 mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" checked>
+            <label class="form-check-label" for="themeSwitch">Modo Escuro</label>
+        </div>
+
+            <h1 class="text-primary mt-4 mb-4">TechNova Solutions</h1>
+            <p>Soluções tecnológicas modernas com apoio ao Boostrap</p>
+        </header>
+
+        <!-- Seção de Cards -->
+     <section class="row mb-4">
+
+        <!-- CARD 1 -->
+        <div class="col-12 col-md-4 mb-3">
+            <div class="card h-100 w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Desenvolvimento Web</h5>
+                    <p class="card-text">Criação de sites e sistema web responsivos com bootstrap.</p>
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Desenvolvimento Web" class="img-thumbnail">
+
+                    <!-- Botão -->
+                    <button class="btn btn-primary mt-3">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card h-100 w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Consultoria</h5>
+                    <p class="card-text">Orientação estratégica para soluções digitais..</p>
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Consultoria" class="img-thumbnail">
+
+                    <!-- Botão -->
+                    <button class="btn btn-primary mt-3">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card h-100 w-100">
+                <div class="card-body">
+                    <h5 class="card-title">Soluções Digitais</h5>
+                    <p class="card-text">Projetos personalizados para diferentes necessidades.</p>
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Soluções Digitais" class="img-thumbnail">
+
+                    <!-- Botão -->
+                    <button class="btn btn-primary mt-3">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    </div>
+
+    <!-- Importação do Javascript do Bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+   
+   <script>
+    // Script para alternar o tema
+    const themeSwitch = document.getElementById("themeSwitch");
+    const htmlElement = document.documentElement; // Pega a tag <html>
+
+    themeSwitch.addEventListener("change", function () {
+      if (this.checked) {
+        htmlElement.setAttribute("data-bs-theme", "dark");
+        this.nextElementSibling.textContent = "Modo Escuro";
+      } else {
+        htmlElement.setAttribute("data-bs-theme", "light");
+        this.nextElementSibling.textContent = "Modo Claro";
+      }
+    });
+   </script>
+</body>
+</html>
