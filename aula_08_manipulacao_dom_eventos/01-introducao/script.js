@@ -25,6 +25,7 @@ function clicar() {
     caixaMagica.innerText = 'Clicou!'
     caixaMagica.style.backgroundColor = 'red'
 }
+
 // Escutando um evento
 caixaMagica.addEventListener('mouseenter', entrada)
 caixaMagica.addEventListener('mouseout', saida)

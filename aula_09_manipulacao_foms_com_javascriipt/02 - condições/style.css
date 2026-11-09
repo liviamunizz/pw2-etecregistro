@@ -1,19 +1,113 @@
-/* CSS */
+/* Estilos globais e centralização */
 body {
-    font: normal 18pt Arial;
+font-family: Arial, sans-serif;
+background-color: #f4f6f9;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
 }
-input {
-    font: normal 18pt Arial;
-    width: 100px;
+
+/* Container principal da calculadora */
+.calculadora {
+background-color: #ffffff;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 320px;
+text-align: center;
 }
-div#resultado {
-    margin-top: 20px;
-    font-weight: 600;
+
+/* Título */
+h1 {
+color: #333333;
+margin-top: 0;
+margin-bottom: 20px;
+font-size: 24px;
 }
+
+/* Campos de entrada */
+.campo-grupo {
+margin-bottom: 15px;
+text-align: left;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+color: #555555;
+font-size: 14px;
+font-weight: bold;
+}
+
+input[type="number"] {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+border: 2px solid #dddddd;
+border-radius: 6px;
+box-sizing: border-box;
+outline: none;
+transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+border-color: #007bff;
+}
+
+/* Container dos botões */
+.botoes-operacoes {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+/* Estilo comum dos botões */
 button {
-    background-color: blue;
-    color: white;
-    width: 150px;
-    height: 60px;
-    font: normal 18pt Arial;
+padding: 12px;
+font-size: 18px;
+font-weight: bold;
+color: #ffffff;
+background-color: #007bff;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+/* Botão limpar */
+button.btn-limpar {
+width: 100%;
+background-color: #dc3545;
+margin-top: 5px;
+}
+
+button.btn-limpar:hover {
+background-color: #bd2130;
+}
+
+/* Área do resultado */
+#resultado {
+margin-top: 20px;
+padding: 12px;
+background-color: #e9ecef;
+border-radius: 6px;
+font-size: 18px;
+font-weight: bold;
+color: #212529;
+min-height: 24px;
+word-wrap: break-word;
+}
+
+.erro {
+color: #dc3545 !important;
+background-color: #f8d7da !important;
 }
